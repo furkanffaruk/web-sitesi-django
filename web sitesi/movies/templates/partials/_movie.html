@@ -1,0 +1,12 @@
+{%load static %}
+<div class="col-4" >
+    <div class="card mt-2" style="width: 18rem;">
+        <img src="{% static 'img/'|add:film.image %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> {{film.name}} </h5>
+          <p class="card-text">{{film.desc}}</p>
+          <p class="card-text">yayımlanma tarihi :{{film.release}} </p>
+          <a href="{%url 'details' film.id %}" class="btn btn-primary">Detaylar</a>
+        </div>
+      </div>
+</div>
